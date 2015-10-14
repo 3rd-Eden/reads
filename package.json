@@ -1,0 +1,35 @@
+{
+  "name": "reads",
+  "version": "1.0.0",
+  "description": "Transform all the data to a readable stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3rd-Eden/reads.git"
+  },
+  "keywords": [
+    "reads",
+    "readable",
+    "readable-stream",
+    "stream",
+    "readablestream",
+    "buffer",
+    "file",
+    "createreadablestream",
+    "streaming",
+    "streams",
+    "reading",
+    "reader",
+    "cows",
+    "moo"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3rd-Eden/reads/issues"
+  },
+  "homepage": "https://github.com/3rd-Eden/reads#readme"
+}
