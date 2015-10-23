@@ -17,6 +17,12 @@ function Buffered(data, options) {
   this._data = data;
 }
 
+//
+// Us the utils.inherit to prevent broken inheritance caused by Node shitty
+// EventEmitter setup. Do it before setting our own property.
+//
+require('util').inherits(Buffered, Readable);
+
 /**
  * Handle the Read requests on the Stream interface.
  *
@@ -31,12 +37,6 @@ Buffered.prototype._read = function _read() {
   //
   this._data = null;
 };
-
-//
-// Us the utils.inherit to prevent broken inheritance caused by Node shitty
-// EventEmitter setup.
-//
-require('util').inherits(Buffered, Readable);
 
 /**
  * The public interface that will always return a Readable stream regardless
